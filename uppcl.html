@@ -1,18 +1,85 @@
 <html>
 <head><title>UP power corporation</title>
-<style>
+  
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for Sarah's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawSarahChart);
+
+      // Draw the pie chart for the Anthony's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawAnthonyChart);
+
+      // Callback that draws the pie chart for Sarah's pizza.
+      function drawSarahChart() {
+
+        // Create the data table for Sarah's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+           ['HTML', 58],
+          ['Java', 34],
+          ['Images', 56],
+          ['CSS', 9],
+          ['PDF', 66]
+        ]);
+
+        // Set options for Sarah's pie chart.
+        var options = {title:'Internal',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Sarah's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the pie chart for Anthony's pizza.
+      function drawAnthonyChart() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['HTML', 24],
+          ['Java', 1],
+          ['Images', 0],
+          ['CSS', 0],
+          ['PDF', 0]
+        ]);
+
+        // Set options for Anthony's pie chart.
+        var options = {title:'External',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Anthony's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+ <style>
 body{
 background-image: url("http://www.intrawallpaper.com/static/images/Red_Background_05.jpg")}
 </style>
 </head>
 <body>
+  
   <center><h1><u><font size=10 color="white">UTTAR PRADESH POWER CORPORATION SEO</font></u></h1></center>
   <p>
-   <p>
-     <img src="https://github.com/Jenyce/Penguin/blob/gh-pages/Capture-in-up.PNG" alt="pie chart for internal files" width=350 height=350>
-   <br>
-     <img src="https://github.com/Jenyce/Penguin/blob/gh-pages/Capture-ex-up.PNG" alt="pie chart for external files" width=350 height=350>
-<font size=7>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="Sarah_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="Anthony_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table><p>
+  <font size=7>
      <table cellspacing=5>
       <tr>
         <th bgcolor="yellow">Check</th><th bgcolor="yellow">Status</th><th bgcolor="yellow">Details</th><th bgcolor="yellow">Suggestions</th></tr>
@@ -22,7 +89,7 @@ background-image: url("http://www.intrawallpaper.com/static/images/Red_Backgroun
       </tr>
       <tr>
       <td bgcolor="lightgray">Meta Description</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">The meta description length of the page is 254 characters. Most search engines will 
-      reduce meta descriptions to 160 characters.<td bgcolor="lightgray">Uttar Pradesh Power Corporation Limited:uppcl online-online payment-complaints-feedbacks</td>
+      reduce meta descriptions to 160 characters.<td bgcolor="lightgray">Consider the use of smaller descriptions</td>
       </tr>
       <tr>
         <td bgcolor="lightgray">Meta keywords<td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">10 Meta Keywords Found</td><td bgcolor="lightgray">Relevant keywords such as <b>uppcl</b>,<b>online bill</b><b>online payment</b>
@@ -75,6 +142,9 @@ background-image: url("http://www.intrawallpaper.com/static/images/Red_Backgroun
       <tr>
         <td bgcolor="lightgray">Page Rank</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">Page rank is 3/10</td><td bgcolor="lightgray">More backlinks need to be used</td>
         </tr>
+        <tr>
+        <td bgcolor="lightgray">Page size</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">Page size is 360Kb</td><td bgcolor="lightgray">The heavier the site page, the slower the load. For optimal performance, try to keep page size below 3MB</td>
+        </tr>
   </table>
   <p>
   <table border=3 bgcolor="pink">
@@ -90,7 +160,33 @@ background-image: url("http://www.intrawallpaper.com/static/images/Red_Backgroun
     <tr>
       <td><b>Last Updated</b></td><td>26 April, 2015</td>
     </tr>
-     </table></font>
+     </table>
+  <table border=3 bgcolor="blue">
+    <tr>
+      <th><u>Response Code</u></th>
+    </tr>
+    <tr>
+      <td><b>200</b></td><td>219</td>
+    </tr>
+    <tr>
+      <td><b>301</b></td><td>27</td>
+    </tr>
+    <tr>
+      <td><b>404</b></td><td>4</td>
+    </tr>
+      <tr>
+      <td><b>500</b></td><td>0</td>
+    </tr>
+     </table>
+  <p>
+  <table border=3 bgcolor="lightgreen">
+    <tr>
+      <th><u><b>Load Time</b></u></th><th><b>SEO score</b></th><th><b>Speed score</b></th>
+    </tr>
+    <tr><td>4.06 sec</td><td>49/100</td><td>60/100</td>
+    </tr>
+  </table>
+  </font>
   </body>
 </html>
   
