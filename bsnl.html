@@ -1,165 +1,191 @@
+
 <html>
-<head><title>BSNL_SEO</title>
-<style>
+<head><title>BSNL</title>
+  
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for Sarah's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawSarahChart);
+
+      // Draw the pie chart for the Anthony's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawAnthonyChart);
+
+      // Callback that draws the pie chart for Sarah's pizza.
+      function drawSarahChart() {
+
+        // Create the data table for Sarah's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+           ['HTML', 154],
+          ['Java', 26],
+          ['Images', 81],
+          ['CSS', 21],
+          ['PDF', 14]
+        ]);
+
+        // Set options for Sarah's pie chart.
+        var options = {title:'Internal',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Sarah's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the pie chart for Anthony's pizza.
+      function drawAnthonyChart() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['HTML', 174],
+          ['Java', 1],
+          ['Images', 3],
+          ['CSS', 1],
+          ['PDF', 4]
+        ]);
+
+        // Set options for Anthony's pie chart.
+        var options = {title:'External',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Anthony's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+ <style>
 body{
-background-image: url("https://raw.githubusercontent.com/Jenyce/Penguin/gh-pages/fQnBKm.jpg")}
+background-image: url("https://cdn.pixabay.com/photo/2012/03/04/00/17/abstract-21851_960_720.jpg")}
 </style>
 </head>
 <body>
-  <center><h1><font color=white><u>BSNL SEO</u></font></h1></center>
-  <ol>
-<li><table border=0 bgcolor="white">
-  <tr><th>HTML</th></tr>
-  </table></li>
-<table border=5 bgcolor="orange">
-<tr>
-<th>Adresss</th><th>Content</th><th>Status Code</th><th>Status</th>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/</td><td>text/html;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/instructions.html</td><td>text/html;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/opencms/bsnl/BSNL/services/landline/basictariff.html</td><td>text/html;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/opencms/bsnl/BSNL/about_us/company/about_bsnl.html</td><td>text/html;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-</table>
-<li><table border=0 bgcolor="white">
-  <tr><th>JavaScript</th></tr></table></li>
-<table border=5 bgcolor="lightgray">
-<tr>
-<th>Adresss</th><th>Content</th><th>Status Code</th><th>Status</th>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/opencms/bsnl/system/modules/BSNL/resources/js/textsizer.js</td><td>application/x-javascript</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/global/plugins/fancybox/source/jquery.fancybox.pack.js</td><td>application/x-javascript</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/global/plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.plugins.min.js</td><td>application/x-javascript</td>
-<td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/opencms/bsnl/system/modules/BSNL/resources/js/jquery.min.js</td><td>application/x-javascript</td><td>200</td><td>OK</td>
-</tr>
-</table>
-<li><table border=0 bgcolor="white">
-  <tr><th>CSS</th></tr></table></li>
-<table border=5 bgcolor="orange">
-<tr>
-<th>Adresss</th><th>Content</th><th>Status Code</th><th>Status</th>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/global/plugins/font-awesome/css/font-awesome.min.css</td><td>text/css;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/frontend/layout/css/custom.css</td><td>text/css;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/frontend/layout/css/themes/custom.css</td><td>text/css;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/frontend/pages/css/style-revolution-slider.css</td><td>text/css;charset=UTF-8</td><td>200</td><td>OK</td>
-</tr>
-</table>
-<li><table border=0 bgcolor="white">
-  <tr><th>Images</th></tr></table></li>
-<table border=5 bgcolor="lightgray">
-<tr>
-<th>Adresss</th><th>Content</th><th>Status Code</th><th>Status</th>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/frontend/pages/img/revolutionslider/bg4.jpg</td><td>image/jpeg</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/frontend/pages/img/works/webmailservice2.jpg</td><td>image/jpeg</td><td>200</td><td>OK</td>
-</tr>
-<td>http://www.bsnl.co.in/assets/frontend/pages/img/revolutionslider/Dilogo.png</td><td>image/png</td><td>200</td><td>OK</td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/assets/frontend/pages/img/photos/tab2.jpg</td><td>image/jpeg</td><td>200</td><td>OK</td>
-</tr>
-</table>
-<li><table border=0 bgcolor="white">
-  <tr><th>PDF</th></tr></table></li>
-<table border=5 bgcolor="lightblue">
-<tr>
-  <th>Adresss</th><th>Content</th><th>Status Code</th><th>Status</th>
-</tr>
-<tr>
-  <td>http://www.bsnl.co.in/opencms/bsnl/BSNL/about_us/hrd/pdf/Press_Release_cashback_1.pdf</td><td>application/pdf</td><td>200</td><td>OK</td>
-  </tr>
-  <tr>
-  <td>http://www.bsnl.co.in/opencms/bsnl/BSNL/about_us/hrd/pdf/noticedt19022015.PDF</td><td>application/pdf</td><td>200</td><td>OK</td>
-  </tr>
+  
+  <center><h1><u><font size=10 color="white">BSNL SEO</font></u></h1></center>
+  <p>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="Sarah_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="Anthony_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table><p>
+  <font size=8>
+     <table cellspacing=5>
+      <tr>
+        <th bgcolor="yellow">Check</th><th bgcolor="yellow">Status</th><th bgcolor="yellow">Details</th><th bgcolor="yellow">Suggestions</th></tr>
+      <tr>
+        <td bgcolor="lightgray">Page Title</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">The Page title length of the page is 28 characters. We can have page title upto 65 characters.</td>
+        <td bgcolor="lightgray">BSNL-Bharat Sanchar Nigam Limited(connecting India) </td>
+      </tr>
+      <tr>
+      <td bgcolor="lightgray">Meta Description</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">The meta description is of 28 characters.We can have meta descriptions upto 160 characters
+        <td bgcolor="lightgray">BSNL-Bharat Sanchar Nigam(online bill info, online payment,new connection)</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Meta keywords<td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">20 Meta Keywords Found</td><td bgcolor="lightgray">Relevant keywords such as <b>online bill</b>,<b>bill payment</b>,<b>broadband connection</b>
+      <br><font color="blue"><i>Google Does not accept meta keywords any more</i></font></td>
+      </tr>
+        <tr>
+          <td bgcolor="lightgray">H1 Headings</td><td bgcolor="lightgray">Not found</td><td bgcolor="lightgray">No H1 headings found out of 142 headings</td><td bgcolor="lightgray">H1 tag must be used as it highly effects SEO of the page</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">H2 Headings</td><td bgcolor="lightgray">Found</td><td bgcolor="lightgray">9 H2 headings found out of 142 headings</td><td bgcolor="lightgray">H2 tag must be used as it highly effects SEO of the page</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Robots.txt</td><td bgcolor="lightgray">Found</td><td bgcolor="lightgray">This site uses "robots.txt" file<br><a href=" http://bsnl.co.in/robots.txt"><b><font size=7>robots.txt</font></b></td><td bgcolor="lightgray">Robots.txt is a text (not html) file you put on your site to tell search robots which pages you would like them not to visit.
+        <br>
+        the syntax is as follows:<br>
+
+        <p><b>User-agent:</b><br>
+
+          <b>Disallow:</b><p>
+
+“User-agent” are search engines' crawlers and "disallow:" lists the files and directories to be excluded from indexing.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Sitemap Test</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">Found 1 sitemaps files in the website<br>
+<a href="http://www.bsnl.co.in/sitemap.xml"><b><font size=7>Sitemap</font></b></a>
+        </td>
+        <td bgcolor="lightgray">A sitemap is a list of pages of a web site accessible to crawlers or users.It is good to have sitemap</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Broken Link test</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">No broken link found in 191 links analyzed</td><td bgcolor="lightgray">It is good to have no broken links</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Underscores in Links</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">Underscores found in your in-page URLs</td><td bgcolor="lightgray">Hyphens should be used instead of underscores
+      </td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">SEO Friendly URL</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">33 internal urls found that are not seo friendly</td><td bgcolor="lightgray">An SEO friendly url must contain only lower alphabets, numbers, slashes(/), dash(-).
+        <br><b>Underscores, upercase Alphabets and special chars (e-g: & ? %) are not seo friendly.</b></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Images</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">The webpage has 84 'img' tags and 51 of them is without 'alt' attribute.</td><td bgcolor="lightgray"><b>'alt'</b> attribute must be used with all 'img' tags.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Favicon Test</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">The website has a favicon.<br><img border=4 width=100 height=100 src="http://zone1.aqusagtechnologi.netdna-cdn.com/wp-content/uploads/2015/06/bsnl1.jpg" alt="uppcl favicon"></td>
+      <td bgcolor="lightgray">Webpage can be easily recognized through Favicon</td> 
+       </tr>
+      <tr>
+        <td bgcolor="lightgray">Page Rank</td><td bgcolor="lightgray">good</td><td bgcolor="lightgray">Page rank is 6/10</td><td bgcolor="lightgray">More backlinks need to be used to increase PR</td>
+        </tr>
+        <tr>
+        <td bgcolor="lightgray">Page size</td><td bgcolor="lightgray">Little heavy</td><td bgcolor="lightgray">Page size is 3.8Mb</td><td bgcolor="lightgray">The heavier the site page, the slower the load. For optimal performance, try to keep page size below 3MB</td>
+        </tr>
   </table>
-   <img alt=piechart height=350 width=350 src="https://raw.githubusercontent.com/Jenyce/Penguin/gh-pages/Captureh.PNG">
   <p>
-    <li><table border=0 bgcolor="white">
-  <tr><th>Meta Description</th></tr></table></li>
-<table border=5 bgcolor="lightgray">
-<tr>
-<th>Address</th><th>Occurences</th><th>Meta Description</th>
-  </tr>
-  <tr>
-    <td>http://www.bsnl.co.in/</td><td>1</td><td>Bharat Sanchar Nigam Limited</td>
-    </tr>
-    <td>http://www.bsnl.co.in/instructions.html</td><td>1</td><td>How to enable Javascript on browser</td>
+  <table border=3 bgcolor="pink">
+    <tr>
+      <th><u>Domain Age</u></th>
     </tr>
     <tr>
-    <td>http://www.bsnl.co.in/opencms/bsnl/BSNL/services/landline/basictariff.html</td><td>0</td><td></td>
-    </tr>
-    </table>
-    <img alt=Graph height=350 width=500 src="https://raw.githubusercontent.com/Jenyce/Penguin/gh-pages/Capturej.PNG">
-  <p>
-    <li><table border=0 bgcolor="white">
-  <tr><th>Meta Keywords</th></tr></table></li>
-<table border=5 bgcolor="lightblue">
-<tr>
-<th>Address</th><th>Occurences</th><th>Meta Keywords</th>
-  </tr>
-  <tr>
-    <td>http://www.bsnl.co.in/</td><td>1</td><td>BSNL Bharat Sanchar Nigam Limited</td>
+      <td><b>Created on</b></td><td>31 March, 2003</td>
     </tr>
     <tr>
-<td>http://www.bsnl.co.in/instructions.html</td><td>1</td><td></td>
-</tr>
-<tr>
-<td>http://www.bsnl.co.in/opencms/bsnl/BSNL/services/landline/basictariff.html</td><td>0</td><td></td>
-</tr>
-</table>
-<img alt=Graph height=350 width=500 src="https://raw.githubusercontent.com/Jenyce/Penguin/gh-pages/Capturek.PNG">
+      <td><b>Age</b></td><td>14 years, 9 days</td>
+    </tr>
+    <tr>
+      <td><b>Last Updated</b></td><td>31 March, 2016</td>
+    </tr>
+     </table><p>
+  <table border=3 bgcolor="lightblue">
+    <tr>
+      <th><u>Response Code</u></th>
+    </tr>
+    <tr>
+      <td><b>200</b></td><td>347</td>
+    </tr>
+    <tr>
+      <td><b>301</b></td><td>133</td>
+    </tr>
+    <tr>
+      <td><b>404</b></td><td>7</td>
+    </tr>
+      <tr>
+      <td><b>500</b></td><td>0</td>
+    </tr>
+     </table>
   <p>
-</ol>
-</body>
+  <table border=3 bgcolor="lightgreen">
+    <tr>
+      <th><u><b>Load Time</b></u></th><th><b>SEO score</b></th><th><b>Speed score</b></th>
+    </tr>
+    <tr><td>60 sec</td><td>73/100</td><td>64/100</td>
+    </tr>
+  </table>
+    <a href="http://smallseotools.com/website-seo-score-checker/" target="_blank">
+      <img src="http://smallseotools.com/imgs/badge-bronze.png" alt="seo checker"/></a>  </font>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
