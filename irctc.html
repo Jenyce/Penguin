@@ -1,0 +1,192 @@
+
+<html>
+<head><title>Indian Railways</title>
+  
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for Sarah's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawSarahChart);
+
+      // Draw the pie chart for the Anthony's pizza when Charts is loaded.
+      google.charts.setOnLoadCallback(drawAnthonyChart);
+
+      // Callback that draws the pie chart for Sarah's pizza.
+      function drawSarahChart() {
+
+        // Create the data table for Sarah's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+           ['HTML', 7],
+          ['Java', 7],
+          ['Images', 11],
+          ['CSS', 4],
+          ['PDF', 0]
+        ]);
+
+        // Set options for Sarah's pie chart.
+        var options = {title:'Internal',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Sarah's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the pie chart for Anthony's pizza.
+      function drawAnthonyChart() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['HTML', 83],
+          ['Java', 0],
+          ['Images', 1],
+          ['CSS', 0],
+          ['PDF', 48]
+        ]);
+
+        // Set options for Anthony's pie chart.
+        var options = {title:'External',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Anthony's pizza.
+        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+ <style>
+body{
+background-image: url("http://www.planwallpaper.com/static/images/6935544-blue-backgrounds-hd.jpg")}
+</style>
+</head>
+<body>
+  
+  <center><h1><u><font size=10 color="white">IRCTC SEO</font></u></h1></center>
+  <p>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="Sarah_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="Anthony_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table><p>
+  <font size=8>
+     <table cellspacing=5>
+      <tr>
+        <th bgcolor="yellow">Check</th><th bgcolor="yellow">Status</th><th bgcolor="yellow">Details</th><th bgcolor="yellow">Suggestions</th></tr>
+      <tr>
+        <td bgcolor="lightgray">Page Title</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">The Page title length of the page is 39 characters. We can have page title upto 65 characters.</td>
+        <td bgcolor="lightgray">IRCTC-Indian Railways Online </td>
+      </tr>
+      <tr>
+      <td bgcolor="lightgray">Meta Description</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">The meta description is not found.We can have meta descriptions upto 160 characters
+        <td bgcolor="lightgray">IRCTC-Indian Railways(online booking & cancelling,PNR status,train-timings)</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Meta keywords<td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">0 Meta Keywords Found</td><td bgcolor="lightgray">Relevant keywords such as <b>ticket booking</b>,<b>PNR status</b>,<b>Train Schedule</b>
+      <br><font color="blue"><i>Google Does not accept meta keywords any more</i></font></td>
+      </tr>
+        <tr>
+          <td bgcolor="lightgray">H1 Headings</td><td bgcolor="lightgray">Not found</td><td bgcolor="lightgray">No H1 headings found out of 34 headings</td><td bgcolor="lightgray">H1 tag must be used as it highly effects SEO of the page</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">H2 Headings</td><td bgcolor="lightgray">Not found</td><td bgcolor="lightgray">No H2 headings found out of 34 headings</td><td bgcolor="lightgray">H12tag must be used as it highly effects SEO of the page</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Robots.txt</td><td bgcolor="lightgray">Found</td><td bgcolor="lightgray">This site uses "robots.txt" file<br><a href=" http://irctc.co.in/robots.txt"><b><font size=7>robots.txt</font></b></td><td bgcolor="lightgray">Robots.txt is a text (not html) file you put on your site to tell search robots which pages you would like them not to visit.
+        <br>
+        the syntax is as follows:<br>
+
+        <p><b>User-agent:</b><br>
+
+          <b>Disallow:</b><p>
+
+“User-agent” are search engines' crawlers and "disallow:" lists the files and directories to be excluded from indexing.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Sitemap Test</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">Found 1 sitemaps files in the website<br>
+<a href=" https://www.irctc.co.in/eticketing/loginHome.jsfsitemap.xml"><b><font size=7>Sitemap</font></b></a>
+        </td>
+        <td bgcolor="lightgray">A sitemap is a list of pages of a web site accessible to crawlers or users.It is good to have sitemap</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Broken Link test</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">No broken link found in 138 links analyzed</td><td bgcolor="lightgray">It is good to have no broken links</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Underscores in Links</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">No underscores found in your in-page URLs</td><td bgcolor="lightgray">Hyphens should be used instead of underscores
+      </td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">SEO Friendly URL</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">6 internal urls found that are not seo friendly</td><td bgcolor="lightgray">An SEO friendly url must contain only lower alphabets, numbers, slashes(/), dash(-).
+        <br><b>Underscores, upercase Alphabets and special chars (e-g: & ? %) are not seo friendly.</b></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Images</td><td bgcolor="lightgray">Not good</td><td bgcolor="lightgray">The webpage has 12 'img' tags and 11 of them is without 'alt' attribute.</td><td bgcolor="lightgray"><b>'alt'</b> attribute must be used with all 'img' tags.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray">Favicon Test</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">The website has a favicon.<br><img border=4 width=100 height=100 src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/IRCTC_Logo.svg/1200px-IRCTC_Logo.svg.png" alt="uppcl favicon"></td>
+      <td bgcolor="lightgray">Webpage can be easily recognized through Favicon</td> 
+       </tr>
+      <tr>
+        <td bgcolor="lightgray">Page Rank</td><td bgcolor="lightgray">good</td><td bgcolor="lightgray">Page rank is 7/10</td><td bgcolor="lightgray">More backlinks need to be used to increase PR</td>
+        </tr>
+        <tr>
+        <td bgcolor="lightgray">Page size</td><td bgcolor="lightgray">OK</td><td bgcolor="lightgray">Page size is 519.2Kb</td><td bgcolor="lightgray">The heavier the site page, the slower the load. For optimal performance, try to keep page size below 3MB</td>
+        </tr>
+  </table>
+  <p>
+  <table border=3 bgcolor="pink">
+    <tr>
+      <th><u>Domain Age</u></th>
+    </tr>
+    <tr>
+      <td><b>Created on</b></td><td>20 September, 2015</td>
+    </tr>
+    <tr>
+      <td><b>Age</b></td><td>6 Months, 19 days</td>
+    </tr>
+    <tr>
+      <td><b>Last Updated</b></td><td>22 December, 2015</td>
+    </tr>
+     </table><p>
+  <table border=3 bgcolor="lightblue">
+    <tr>
+      <th><u>Response Code</u></th>
+    </tr>
+    <tr>
+      <td><b>200</b></td><td>148</td>
+    </tr>
+    <tr>
+      <td><b>301</b></td><td>11</td>
+    </tr>
+    <tr>
+      <td><b>404</b></td><td>7</td>
+    </tr>
+      <tr>
+      <td><b>500</b></td><td>0</td>
+    </tr>
+     </table>
+  <p>
+  <table border=3 bgcolor="lightgreen">
+    <tr>
+      <th><u><b>Load Time</b></u></th><th><b>SEO score</b></th><th><b>Speed score</b></th>
+    </tr>
+    <tr><td>6 sec</td><td>54/100</td><td>46/100</td>
+    </tr>
+  </table>
+    <a href="http://smallseotools.com/website-seo-score-checker/" target="_blank">
+      <img src="http://smallseotools.com/imgs/badge-bronze.png" alt="seo checker"/></a>
+  </font>
+  </body>
+</html>
+  
